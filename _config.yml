@@ -1,0 +1,52 @@
+# Site settings
+title: Consentus
+email:
+url: http://consentus.eu
+#thumbnail: http://tuliphft.com/img/thumb.png
+description: "Consentus is an organization that facilitates standardization of consent and sharing of medical data using blockchain technologies"
+
+# Color settings (hex-codes without the leading
+# 
+color: 
+  primary: 006790 #80B3FF
+  secondary: 00b1d8 #FD6E8A
+  secondary-dark: 0D0D0B #A2122F 
+#Footer settings 
+footer: 
+  copyright: Consentus
+  location: The Netherlands 
+  social: '@Consentus_chain'
+  credits: Credits
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+
+
+social:
+  - title: twitter
+    url: http://twitter.com/Consentus_chain
+
+
+# Postal address (add as many lines as necessary) 
+        #address: 
+        # - line: 3481 Melrose Place 
+        # - line: Beverly Hills, CA 90210 
+
+# Credits content
+credits: 'This site is build with Freelancer, a free to use, open  source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+# Build settings 
+markdown: kramdown 
+permalink: /blog/:year/:month/:day/:title.html
+analytics :
+  provider : google
+  google :
+  tracking_id : 'UA-59914141-1'
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+defaults:
+  -
+
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
